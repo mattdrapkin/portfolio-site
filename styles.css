@@ -8,14 +8,39 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Quicksand", sans-serif;
+    min-height: 100%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 6em;
 }
 
 button {
     font-family: 'Catamaran', sans-serif;
 }
 
-.content {
-    padding: 100px 0;
+.content, .projects-container, .about-container {
+    padding: 175px 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+p a {
+    text-decoration: none;
+    color: black;
 }
 
 .selfie {
@@ -48,27 +73,29 @@ button {
     margin-right: 4em;
 }
 
-.intro {
+.vert-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2em;
 }
 
 .big-name {
     font-family: "Nunito Sans", sans-serif;
     font-size: 6em;
+    text-align: center;
 }
 
 .text-divider {
-    width: 50em;
+    width: 60em;
     border-top: 3px solid #ff5722;
     border-radius: 5px;
 }
 
 .descriptor {
     margin-top: 2em;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .about-btn {
@@ -77,21 +104,28 @@ button {
     padding: 0.5em 2em;
     font-size: 24px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .pton {
     color: #da4214;
 }
 
-.side-txt {
+.side-txt, .side-imgs {
     display: flex;
-    justify-content:center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 4em;
 }
 
 .side-txt > p {
     text-align: left;
     width: 50%;
+}
+
+.side-txt {
+    margin-bottom: 8em;
 }
 
 footer img {
@@ -103,7 +137,6 @@ footer img {
     display: flex;
     gap: 1em;
     padding-left: 2em;
-
 }
 
 
@@ -121,4 +154,93 @@ footer {
     gap: 1em;
     align-items: center;
     padding-right: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#me1 {
+    width: 30em;
+    height: auto;
+    border: 3px solid #ff5722;
+}
+
+.about-txt {
+    width: 30em;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 2em;
+    flex-shrink: 0;
+}
+
+.about-pic {
+    width: 24em;
+    height: 12em;
+    border: 3px solid #222831;
+}
+
+.side-imgs {
+    flex: 1;
+    background-color: #2d4059;
+    padding: 2em;
+    gap: 2em;
+    margin-top: 12em;
+}
+
+.resume {
+    width: 30em;
+    height: auto;
+    border: 1px solid black;
+}
+
+.project-container {
+    display: flex;
+    flex: 1;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4em;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    width: 24em;
+    height: 12em;
+}
+
+.project > p {
+    width: 24em;
+    text-align: center;
+}
+
+.project-btns {
+    display: flex;
+    gap: 3em;
+}
+
+.project-btns button {
+    font-size: 16px;
+    width: 8em;
+    background-color: #2d4059;
+    color: #eeeeee;
+    border-radius: 12px;;
+}
+
+.more-abt {
+    font-size: 20px;
+    width: 35em;
 }
