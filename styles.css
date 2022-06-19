@@ -172,7 +172,7 @@ a {
     font-size: 1.25em;
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 8em;
     gap: 2em;
     flex-shrink: 0;
 }
@@ -188,7 +188,7 @@ a {
     background-color: #2d4059;
     padding: 2em;
     gap: 2em;
-    margin-top: 12em;
+    margin-top: 6em;
 }
 
 .resume {
